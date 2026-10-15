@@ -21,13 +21,13 @@ class ArchiveMenu(
     }
 
     private fun createArchive() {
-        println("\n--- Создание архива ---")
+        println("\nСоздание архива...")
         val name = InputUtils.readNonEmptyString(
             prompt = "Введите имя архива: ",
             errorMessage = "Имя архива не может быть пустым."
         )
         archives.add(Archive(name))
-        println("Архив '$name' успешно создан!")
+        println("Архив '$name' успешно создан")
     }
 
     private fun openArchive(archive: Archive) {

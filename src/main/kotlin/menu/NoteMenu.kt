@@ -21,7 +21,7 @@ class NoteMenu(
     }
 
     private fun createNote() {
-        println("\n--- Создание заметки ---")
+        println("\nСоздание заметки...")
         val title = InputUtils.readNonEmptyString(
             prompt = "Введите название заметки: ",
             errorMessage = "Название заметки не может быть пустым."
@@ -31,7 +31,7 @@ class NoteMenu(
             errorMessage = "Текст заметки не может быть пустым."
         )
         archive.notes.add(Note(title, content))
-        println("Заметка '$title' успешно создана!")
+        println("Заметка '$title' создана!")
     }
 
     private fun openNote(note: Note) {

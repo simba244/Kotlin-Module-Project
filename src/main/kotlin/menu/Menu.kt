@@ -11,12 +11,12 @@ class Menu {
             items.forEachIndexed { index, item ->
                 println("$index. ${item.title}")
             }
-            print("Выберите пункт меню: ")
+            print("Введите пункт меню: ")
             val input = readlnOrNull()?.trim() ?: ""
 
             val choice = input.toIntOrNull()
             if (choice == null) {
-                println("Ошибка: следует вводить цифру. Попробуйте еще раз.")
+                println("Ошибка: введите цифру. Попробуйте еще раз.")
                 continue
             }
 
